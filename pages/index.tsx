@@ -13,7 +13,7 @@ export default function Home({ data }: Props) {
 		</Box>
 	);
 }
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
 	const data: NewPokemon[] = await getPokemon();
 
 	return {
